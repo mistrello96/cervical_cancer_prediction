@@ -8,10 +8,10 @@
 <entry key="authored-by" type="xstring" value="mistr"/>
 <entry key="authored-when" type="xstring" value="2019-12-27 11:04:54 +0100"/>
 <entry key="lastEdited-by" type="xstring" value="mistr"/>
-<entry key="lastEdited-when" type="xstring" value="2019-12-27 12:44:16 +0100"/>
+<entry key="lastEdited-when" type="xstring" value="2019-12-27 14:40:01 +0100"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
 <config key="node_1">
@@ -214,7 +214,7 @@
 </config>
 <config key="connection_2">
 <entry key="sourceID" type="xint" value="3"/>
-<entry key="destID" type="xint" value="4"/>
+<entry key="destID" type="xint" value="6"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="1"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
@@ -224,7 +224,7 @@
 </config>
 <config key="connection_3">
 <entry key="sourceID" type="xint" value="3"/>
-<entry key="destID" type="xint" value="6"/>
+<entry key="destID" type="xint" value="4"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="1"/>
 <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
