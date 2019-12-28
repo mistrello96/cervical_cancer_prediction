@@ -15,7 +15,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="maxIterations"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="0"/>
+<entry key="value" type="xint" value="-1"/>
 </config>
 <config key="Loop_Execute_3">
 <entry key="type" type="xstring" value="loopcontext_execute"/>
@@ -53,10 +53,10 @@
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-bundle-version" type="xstring" value="4.1.0.v201912041211"/>
-<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
-<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
-<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="4.1.0.v201912201424"/>
+<entry key="node-feature-name" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-version" type="xstring" value="0.0.0"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="X-Partitioner"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -79,6 +79,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" value="filestore"/>
-<entry key="file_store_id" type="xstring" value="aec1b886-1c50-473e-b88c-c03d1834b5c5"/>
+<entry key="file_store_id" type="xstring" value="c7182201-3b6d-482b-8394-8d1aa0206216"/>
 </config>
 </config>

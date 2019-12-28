@@ -898,10 +898,10 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Remove rows with%%00013%%00010high rate of missing"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="652"/>
+<entry key="x-coordinate" type="xint" value="640"/>
 <entry key="y-coordinate" type="xint" value="402"/>
-<entry key="width" type="xint" value="109"/>
-<entry key="height" type="xint" value="30"/>
+<entry key="width" type="xint" value="132"/>
+<entry key="height" type="xint" value="36"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
 <entry key="borderColor" type="xint" value="16777215"/>
@@ -917,10 +917,10 @@
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-bundle-version" type="xstring" value="4.1.0.v201912041211"/>
-<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
-<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
-<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="4.1.0.v201912201424"/>
+<entry key="node-feature-name" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+<entry key="node-feature-version" type="xstring" value="0.0.0"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Missing Value Column Filter"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -936,6 +936,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="21f58b7c-1c83-4904-ab5a-8f95f9fc5127"/>
+<entry key="file_store_id" type="xstring" value="aab29383-994d-409d-b52d-13c1574393c1"/>
 </config>
 </config>
