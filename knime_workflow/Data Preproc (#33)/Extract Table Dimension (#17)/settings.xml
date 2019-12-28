@@ -34,10 +34,10 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="See problem dimension%%00013%%00010after missing removal"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="834"/>
+<entry key="x-coordinate" type="xint" value="831"/>
 <entry key="y-coordinate" type="xint" value="182"/>
-<entry key="width" type="xint" value="145"/>
-<entry key="height" type="xint" value="36"/>
+<entry key="width" type="xint" value="151"/>
+<entry key="height" type="xint" value="38"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
 <entry key="borderColor" type="xint" value="16777215"/>
@@ -53,10 +53,10 @@
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-bundle-version" type="xstring" value="4.1.0.v201912041211"/>
-<entry key="node-feature-name" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-version" type="xstring" value="0.0.0"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.0.v201912041824"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Extract Table Dimension"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -72,6 +72,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="786bc3ca-8a1c-4bdf-af16-6c093e4a0ff7"/>
+<entry key="file_store_id" type="xstring" value="a31946e7-f4d4-4af1-996f-581acc2c23de"/>
 </config>
 </config>

@@ -164,7 +164,7 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="85.37081087512026"/>
+<entry key="DoubleCell" type="xdouble" value="33.354809206801015"/>
 </config>
 </config>
 <config key="upper_bound">
@@ -303,13 +303,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="true"/>
+<entry key="BooleanCell" type="xboolean" value="false"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="false"/>
+<entry key="BooleanCell" type="xboolean" value="true"/>
 </config>
 </config>
 </config>
@@ -528,13 +528,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="true"/>
+<entry key="BooleanCell" type="xboolean" value="false"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="false"/>
+<entry key="BooleanCell" type="xboolean" value="true"/>
 </config>
 </config>
 </config>
