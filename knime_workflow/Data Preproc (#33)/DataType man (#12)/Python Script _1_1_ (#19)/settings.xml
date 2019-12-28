@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import numpy as np%%00010output_table = input_table.copy()%%00010bool_columns = ['Smokes', 'Hormonal Contraceptives', 'IUD', 'STDs', 'STDs:condylomatosis',%%00010       'STDs:cervical condylomatosis', 'STDs:vaginal condylomatosis',%%00010       'STDs:vulvo-perineal condylomatosis', 'STDs:syphilis',%%00010       'STDs:pelvic inflammatory disease', 'STDs:genital herpes',%%00010       'STDs:molluscum contagiosum', 'STDs:AIDS', 'STDs:HIV',%%00010       'STDs:Hepatitis B', 'STDs:HPV', 'Dx:Cancer', 'Dx:CIN', 'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller',%%00010       'Citology', 'Biopsy']%%00010for col in bool_columns:%%00010%%00009output_table[col] = output_table[col].astype(bool)%%00010output_table.where(output_table.notnull(), None)%%00010output_table.to_csv(flow_variables['knime.workspace'] + &quot;/dump.csv&quot;, na_rep = &quot;?&quot;, index = False)"/>
+<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import numpy as np%%00010output_table = input_table.copy()%%00010bool_columns = ['Smokes', 'Hormonal Contraceptives', 'IUD', 'STDs', 'STDs:condylomatosis',%%00010       'STDs:cervical condylomatosis', 'STDs:vaginal condylomatosis',%%00010       'STDs:vulvo-perineal condylomatosis', 'STDs:syphilis',%%00010       'STDs:pelvic inflammatory disease', 'STDs:genital herpes',%%00010       'STDs:molluscum contagiosum', 'STDs:AIDS', 'STDs:HIV',%%00010       'STDs:Hepatitis B', 'STDs:HPV', 'Dx:Cancer', 'Dx:CIN', 'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller',%%00010       'Citology', 'Biopsy']%%00010for col in bool_columns:%%00010%%00009output_table[col] = output_table[col].astype(bool)%%00010%%00009#output_table[col] = output_table[col].apply(lambda x: 'true' if x == True else 'false')%%00010output_table.where(output_table.notnull(), None)%%00010output_table.to_csv(flow_variables['knime.workspace'] + &quot;/dump.csv&quot;, na_rep = &quot;?&quot;, index = False)"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>
@@ -67,6 +67,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="38c07806-7153-47e1-91c2-de80dfb02137"/>
+<entry key="file_store_id" type="xstring" value="2437bb3f-781c-4855-8882-72ebb71b9670"/>
 </config>
 </config>
