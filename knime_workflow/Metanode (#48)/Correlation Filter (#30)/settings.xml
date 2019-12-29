@@ -33,7 +33,7 @@
 <entry key="node-feature-name" type="xstring" value="KNIME Core"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="4.1.0.v201912041824"/>
+<entry key="node-feature-version" type="xstring" value="4.1.0.v201912201424"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Correlation Filter"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -49,6 +49,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="83ca20f2-a010-406e-8fc5-edab72968eaa"/>
+<entry key="file_store_id" type="xstring" value="47811f98-9610-45b3-b53d-d20e1c530de4"/>
 </config>
 </config>
