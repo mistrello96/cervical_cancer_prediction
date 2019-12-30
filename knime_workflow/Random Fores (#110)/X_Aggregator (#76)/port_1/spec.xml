@@ -1214,13 +1214,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="false"/>
+<entry key="StringCell" type="xstring" value="true"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="true"/>
+<entry key="StringCell" type="xstring" value="false"/>
 </config>
 </config>
 </config>
