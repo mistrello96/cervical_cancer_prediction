@@ -161,7 +161,7 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
-<entry key="port_object_summary" type="xstring" value="SVG 649 x 530"/>
+<entry key="port_object_summary" type="xstring" value="SVG 651 x 545"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -186,6 +186,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="eac96be6-01ab-40cc-8e46-05ad961a2b57"/>
+<entry key="file_store_id" type="xstring" value="4a06c8f9-ad3c-43fb-8e43-f369da7c5600"/>
 </config>
 </config>
