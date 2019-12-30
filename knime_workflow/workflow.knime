@@ -8,14 +8,10 @@
 <entry key="authored-by" type="xstring" value="mistr"/>
 <entry key="authored-when" type="xstring" value="2019-12-27 11:04:54 +0100"/>
 <entry key="lastEdited-by" type="xstring" value="mistrello96"/>
-<entry key="lastEdited-when" type="xstring" value="2019-12-30 16:58:50 +0100"/>
+<entry key="lastEdited-when" type="xstring" value="2019-12-30 17:45:08 +0100"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="ERROR"/>
-<entry key="message" type="xstring" value="Error in sub flow."/>
-</config>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <config key="workflow_credentials"/>
 <config key="annotations">
 <config key="annotation_0">
@@ -539,8 +535,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="84"/>
 <entry key="1" type="xint" value="457"/>
-<entry key="2" type="xint" value="106"/>
-<entry key="3" type="xint" value="69"/>
+<entry key="2" type="xint" value="136"/>
+<entry key="3" type="xint" value="88"/>
 </config>
 </config>
 </config>
