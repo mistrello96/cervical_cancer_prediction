@@ -39,8 +39,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="664"/>
 <entry key="1" type="xint" value="397"/>
-<entry key="2" type="xint" value="94"/>
-<entry key="3" type="xint" value="93"/>
+<entry key="2" type="xint" value="110"/>
+<entry key="3" type="xint" value="101"/>
 </config>
 </config>
 </config>
@@ -55,8 +55,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="484"/>
 <entry key="1" type="xint" value="297"/>
-<entry key="2" type="xint" value="94"/>
-<entry key="3" type="xint" value="93"/>
+<entry key="2" type="xint" value="110"/>
+<entry key="3" type="xint" value="101"/>
 </config>
 </config>
 </config>
@@ -71,8 +71,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="144"/>
 <entry key="1" type="xint" value="397"/>
-<entry key="2" type="xint" value="79"/>
-<entry key="3" type="xint" value="78"/>
+<entry key="2" type="xint" value="94"/>
+<entry key="3" type="xint" value="82"/>
 </config>
 </config>
 </config>
@@ -88,7 +88,7 @@
 <entry key="0" type="xint" value="264"/>
 <entry key="1" type="xint" value="297"/>
 <entry key="2" type="xint" value="50"/>
-<entry key="3" type="xint" value="78"/>
+<entry key="3" type="xint" value="82"/>
 </config>
 </config>
 </config>
@@ -103,8 +103,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="364"/>
 <entry key="1" type="xint" value="297"/>
-<entry key="2" type="xint" value="50"/>
-<entry key="3" type="xint" value="78"/>
+<entry key="2" type="xint" value="51"/>
+<entry key="3" type="xint" value="82"/>
 </config>
 </config>
 </config>
@@ -119,8 +119,24 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="904"/>
 <entry key="1" type="xint" value="397"/>
-<entry key="2" type="xint" value="83"/>
-<entry key="3" type="xint" value="78"/>
+<entry key="2" type="xint" value="96"/>
+<entry key="3" type="xint" value="82"/>
+</config>
+</config>
+</config>
+<config key="node_108">
+<entry key="id" type="xint" value="108"/>
+<entry key="node_settings_file" type="xstring" value="Per_fold F1 (#108)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="node_type" type="xstring" value="MetaNode"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1064"/>
+<entry key="1" type="xint" value="453"/>
+<entry key="2" type="xint" value="75"/>
+<entry key="3" type="xint" value="69"/>
 </config>
 </config>
 </config>
@@ -198,6 +214,18 @@
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="0"/>
 </config>
+<config key="connection_8">
+<entry key="sourceID" type="xint" value="85"/>
+<entry key="destID" type="xint" value="108"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_9">
+<entry key="sourceID" type="xint" value="108"/>
+<entry key="destID" type="xint" value="-1"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
 </config>
 <config key="meta_in_ports">
 <entry key="ui_classname" type="xstring" isnull="true" value=""/>
@@ -212,11 +240,27 @@
 </config>
 </config>
 <config key="meta_out_ports">
-<entry key="ui_classname" type="xstring" isnull="true" value=""/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1220"/>
+<entry key="1" type="xint" value="0"/>
+<entry key="2" type="xint" value="50"/>
+<entry key="3" type="xint" value="809"/>
+</config>
+</config>
 <config key="port_enum">
 <config key="outport_0">
 <entry key="index" type="xint" value="0"/>
 <entry key="name" type="xstring" value="Connected to: Prediction table"/>
+<config key="type">
+<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+</config>
+</config>
+<config key="outport_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="name" type="xstring" value="Connected to: Collected results"/>
 <config key="type">
 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
 </config>

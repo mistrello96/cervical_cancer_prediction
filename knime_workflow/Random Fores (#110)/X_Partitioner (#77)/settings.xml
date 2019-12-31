@@ -43,15 +43,15 @@
 <entry key="stratifiedSampling" type="xboolean" value="true"/>
 <entry key="classColumn" type="xstring" value="Biopsy"/>
 <entry key="useRandomSeed" type="xboolean" value="true"/>
-<entry key="randomSeed" type="xlong" value="12345"/>
+<entry key="randomSeed" type="xlong" value="42"/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="5 fold stratified%%00013%%00010cross val"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="107"/>
+<entry key="x-coordinate" type="xint" value="94"/>
 <entry key="y-coordinate" type="xint" value="459"/>
-<entry key="width" type="xint" value="106"/>
-<entry key="height" type="xint" value="30"/>
+<entry key="width" type="xint" value="132"/>
+<entry key="height" type="xint" value="26"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
 <entry key="borderColor" type="xint" value="16777215"/>
@@ -102,6 +102,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" value="filestore"/>
-<entry key="file_store_id" type="xstring" value="72522ee2-f695-46e5-b52b-2e9c370148d8"/>
+<entry key="file_store_id" type="xstring" value="143e406e-da6d-4f42-8ced-5cf4e664ae5a"/>
 </config>
 </config>
