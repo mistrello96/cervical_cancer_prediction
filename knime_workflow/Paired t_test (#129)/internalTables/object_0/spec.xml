@@ -58,13 +58,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="1.8756562445513882"/>
+<entry key="DoubleCell" type="xdouble" value="0.8109990534991454"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="1.8756562445513882"/>
+<entry key="DoubleCell" type="xdouble" value="0.8109990534991454"/>
 </config>
 </config>
 </config>
@@ -108,13 +108,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.13395207891666072"/>
+<entry key="DoubleCell" type="xdouble" value="0.46286203714586394"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.13395207891666072"/>
+<entry key="DoubleCell" type="xdouble" value="0.46286203714586394"/>
 </config>
 </config>
 </config>
@@ -135,13 +135,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.022408026755852895"/>
+<entry key="DoubleCell" type="xdouble" value="0.02385497006186661"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.022408026755852895"/>
+<entry key="DoubleCell" type="xdouble" value="0.02385497006186661"/>
 </config>
 </config>
 </config>
@@ -160,13 +160,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.026713781490224655"/>
+<entry key="DoubleCell" type="xdouble" value="0.06577237597184485"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.026713781490224655"/>
+<entry key="DoubleCell" type="xdouble" value="0.06577237597184485"/>
 </config>
 </config>
 </config>
@@ -185,13 +185,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.011946766269643591"/>
+<entry key="DoubleCell" type="xdouble" value="0.029414300742943773"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.011946766269643591"/>
+<entry key="DoubleCell" type="xdouble" value="0.029414300742943773"/>
 </config>
 </config>
 </config>
@@ -235,13 +235,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="-0.010761513974298715"/>
+<entry key="DoubleCell" type="xdouble" value="-0.057812221253420504"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="-0.010761513974298715"/>
+<entry key="DoubleCell" type="xdouble" value="-0.057812221253420504"/>
 </config>
 </config>
 </config>
@@ -260,13 +260,13 @@
 <config key="lower_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.05557756748600451"/>
+<entry key="DoubleCell" type="xdouble" value="0.10552216137715373"/>
 </config>
 </config>
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="0.05557756748600451"/>
+<entry key="DoubleCell" type="xdouble" value="0.10552216137715373"/>
 </config>
 </config>
 </config>

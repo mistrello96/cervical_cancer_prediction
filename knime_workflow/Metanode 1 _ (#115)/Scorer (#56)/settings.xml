@@ -60,7 +60,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Cohen's kappa"/>
 <entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.6774316109422495"/>
+<entry key="value" type="xdouble" value="0.7172356369691923"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

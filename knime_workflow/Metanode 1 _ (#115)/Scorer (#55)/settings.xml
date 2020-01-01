@@ -36,31 +36,31 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Accuracy"/>
 <entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.9469964664310954"/>
+<entry key="value" type="xdouble" value="0.9363957597173145"/>
 </config>
 <config key="Variable_6">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Error"/>
 <entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.053003533568904596"/>
+<entry key="value" type="xdouble" value="0.0636042402826855"/>
 </config>
 <config key="Variable_7">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="#Correct"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="268"/>
+<entry key="value" type="xint" value="265"/>
 </config>
 <config key="Variable_8">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="#False"/>
 <entry key="class" type="xstring" value="INTEGER"/>
-<entry key="value" type="xint" value="15"/>
+<entry key="value" type="xint" value="18"/>
 </config>
 <config key="Variable_9">
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="Cohen's kappa"/>
 <entry key="class" type="xstring" value="DOUBLE"/>
-<entry key="value" type="xdouble" value="0.5662613671196484"/>
+<entry key="value" type="xdouble" value="0.5378334240609689"/>
 </config>
 </config>
 <config key="internal_node_subsettings">

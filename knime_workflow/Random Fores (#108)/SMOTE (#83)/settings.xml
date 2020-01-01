@@ -6,10 +6,10 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="kNN" type="xint" value="3"/>
 <entry key="method" type="xstring" value="oversample_equal"/>
 <entry key="rate" type="xdouble" value="2.0"/>
 <entry key="class" type="xstring" value="Biopsy"/>
+<entry key="kNN" type="xint" value="3"/>
 <entry key="seed" type="xstring" value="42"/>
 </config>
 <config key="nodeAnnotation">
