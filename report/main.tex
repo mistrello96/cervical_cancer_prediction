@@ -1,0 +1,77 @@
+\documentclass[a4paper, 10pt, conference]{ieeeconf} 
+\overrideIEEEmargins
+\usepackage[italian]{babel} % imposta lingua
+\usepackage[babel]{csquotes} % imposta lingua
+\usepackage[utf8]{inputenc} % imposta lingua
+\usepackage[T1]{fontenc} % imposta lingua
+\usepackage{amsmath, amssymb, amsfonts} % pachetto per formule
+% \usepackage[parfill]{parskip} % non si dovrebbe fare, ma sostituisce le rientranze dei paragrafi con interlinea
+\usepackage{listings} % per poter far riconoscere e colorare codice 
+\usepackage{xcolor} % pacchetto per testo colorato
+\usepackage{float, subfig} % pachetto per figure, per posizionamento
+\usepackage{booktabs} % pacchetto per tabelle
+\usepackage{graphicx, wrapfig} % pachetto per tabelle
+\usepackage{tcolorbox} % riquadri colorati
+\usepackage[Listato]{algorithm} % pseudocodice
+\usepackage{algpseudocode} % pseudocodice
+\usepackage[hidelinks]{hyperref} % indice e riferimenti cliccabili e senza riquadro rosso
+\frenchspacing %spaziatura italiana per accenti
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % note TODO
+% CONFIGURAZIONE LINK E RIFERIMENTI
+\hypersetup{%
+	pdfpagemode={UseOutlines},
+	bookmarksopen,
+	pdfstartview={FitH},
+	colorlinks,
+	linkcolor={black}, %COLORE DEI RIFERIMENTI AL TESTO
+	citecolor={blue}, %COLORE DEI RIFERIMENTI ALLE CITAZIONI
+	urlcolor={blue} %COLORI DEGLI URL
+}
+
+\title{\LARGE \bf
+Performance Time Report
+}
+
+\author{Mistri Matteo - 808097\\
+	Daniele Maria Papetti - 808027% <-this % stops a space
+}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+
+very interesting abstract
+
+\end{abstract}
+
+
+\input{introduction}
+
+\input{dataset}
+
+\input{methods}
+
+\input{results}
+
+\input{conclusion}
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} C. N. Fischer, R. K. Cytron \& R. J. LeBlanc. ÒCrafting a CompilerÓ, 2nd ed.,Boston: Pearson Education, 2010.
+
+\end{thebibliography}
+
+\end{document}
