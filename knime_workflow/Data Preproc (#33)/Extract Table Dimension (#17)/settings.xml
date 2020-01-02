@@ -34,10 +34,10 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="See problem dimension%%00013%%00010after missing removal"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="840"/>
-<entry key="y-coordinate" type="xint" value="182"/>
-<entry key="width" type="xint" value="133"/>
-<entry key="height" type="xint" value="30"/>
+<entry key="x-coordinate" type="xint" value="662"/>
+<entry key="y-coordinate" type="xint" value="377"/>
+<entry key="width" type="xint" value="145"/>
+<entry key="height" type="xint" value="36"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
 <entry key="borderColor" type="xint" value="16777215"/>
@@ -72,6 +72,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c535062b-1a39-49f7-b0cc-e416824f7cc3"/>
+<entry key="file_store_id" type="xstring" value="3fdefd82-7d41-444e-8c53-1a25770ea5e4"/>
 </config>
 </config>

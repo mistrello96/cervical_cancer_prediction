@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="output_table = input_table.copy()%%00010import matplotlib.pyplot as plt%%00010%%00010plt.figure(figsize = (8, 6))%%00010for i, v in zip(range(6), input_table['F-measure']):%%00010%%00009plt.plot(i, v, marker = 'x', markersize = 12)%%00010plt.xlabel(&quot;Model&quot;, fontsize = 16)%%00010plt.ylabel(&quot;F1-score&quot;, fontsize = 16)%%00010plt.title('F1-score for each model', fontsize = 18)%%00010plt.xticks(ticks = range(6), labels = list(input_table.index), fontsize = 14, rotation = 45)%%00010plt.yticks(fontsize = 14)%%00010plt.tight_layout()%%00010plt.savefig(flow_variables['knime.workspace'] + &quot;/images/fscore.png&quot;, dpi = 300)%%00010plt.close()"/>
+<entry key="sourceCode" type="xstring" value="output_table = input_table.copy()%%00010import matplotlib.pyplot as plt%%00010%%00010plt.figure(figsize = (8, 6))%%00010for i, v in zip(range(6), input_table['F-measure']):%%00010%%00009plt.plot(i, v, marker = 'x', markersize = 12)%%00010plt.xlabel(&quot;Model&quot;, fontsize = 16)%%00010plt.ylabel(&quot;F1-score&quot;, fontsize = 16)%%00010plt.title('F1-score for each model', fontsize = 18)%%00010plt.xticks(ticks = range(6), labels = list(input_table.index), fontsize = 14, rotation = 45)%%00010plt.yticks(fontsize = 14)%%00010plt.tight_layout()%%00010plt.savefig(flow_variables['knime.workspace'] + &quot;/images/fscore.pdf&quot;, dpi = 300)%%00010plt.close()"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>
@@ -32,7 +32,7 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <entry key="factory" type="xstring" value="org.knime.python2.nodes.script.Python2ScriptNodeFactory"/>
 <entry key="node-name" type="xstring" value="Python Script (1⇒1)"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
@@ -45,19 +45,16 @@
 <entry key="node-feature-version" type="xstring" value="4.1.0.v201911281838"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Python Script (1⇒1)"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
-<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 6, Cols: 1"/>
-<entry key="port_dir_location" type="xstring" value="port_1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="2dc93387-c92b-4c0f-bb43-c8c241d5fb91"/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>

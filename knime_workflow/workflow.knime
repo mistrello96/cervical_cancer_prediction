@@ -8,10 +8,10 @@
 <entry key="authored-by" type="xstring" value="mistr"/>
 <entry key="authored-when" type="xstring" value="2019-12-27 11:04:54 +0100"/>
 <entry key="lastEdited-by" type="xstring" value="mistrello96"/>
-<entry key="lastEdited-when" type="xstring" value="2020-01-01 17:06:35 +0100"/>
+<entry key="lastEdited-when" type="xstring" value="2020-01-02 14:49:02 +0100"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="annotations">
 <config key="annotation_0">
@@ -88,7 +88,7 @@
 <entry key="bgcolor" type="xint" value="7688315"/>
 <entry key="x-coordinate" type="xint" value="960"/>
 <entry key="y-coordinate" type="xint" value="-160"/>
-<entry key="width" type="xint" value="1100"/>
+<entry key="width" type="xint" value="920"/>
 <entry key="height" type="xint" value="1020"/>
 <entry key="alignment" type="xstring" value="LEFT"/>
 <entry key="borderSize" type="xint" value="10"/>
@@ -661,7 +661,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1704"/>
+<entry key="0" type="xint" value="1784"/>
 <entry key="1" type="xint" value="157"/>
 <entry key="2" type="xint" value="90"/>
 <entry key="3" type="xint" value="82"/>
@@ -693,7 +693,7 @@
 <config key="ui_settings">
 <config key="extrainfo.node.bounds">
 <entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1704"/>
+<entry key="0" type="xint" value="1784"/>
 <entry key="1" type="xint" value="497"/>
 <entry key="2" type="xint" value="90"/>
 <entry key="3" type="xint" value="82"/>

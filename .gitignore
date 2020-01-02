@@ -1,5 +1,11 @@
 .metadata/
-ExampleWorkflow/
-images/*.png
 Example Workflows/
 Example\ Workfolws/
+*.log
+*.aux
+*.gz
+*.toc
+*.out
+*.blg
+*.bbl
+report/*.pdf
