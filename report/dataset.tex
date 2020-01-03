@@ -2,84 +2,50 @@
 \subsection{Data exploration}
 Il dataset fornito presenta $858$ record, ognuno associato ad un totale di $36$ valori, etichetta inclusa. Un elenco degli attributi presenti nel dataset è riportata in Tabella \ref{tab:attributes}, dove viene altresì riportato il DataType associato ad ognuno di essi. I dati provengono da uno screening effettuato su una popolazione di donne in un ospedale di Caracas, Venezuela \todo{cita sito}, delle quali sono stati raccolti e riportati una serie di dati personali, medici e strumentali. In particolare, nel dataset è possibile individuare un gruppo di attributi relativi all'attività sessuale delle donne, al numero di partner ed al tipo di contraccettivo utilizzato (ormonale vs intrauterino - IUD -). Viene poi riportata una lunga lista di malattie sessualmente trasmissibili (STDs), il numero totale di patologie sessuali contratte e l'intervallo di tempo trascorso dalla prima e dall'ultima diagnosi di queste malattie. Sono infine presenti informazioni circa precedenti diagnosi di cancro o Papilloma Virus (DX) e i risultati di alcuni esami strumentali eseguiti sulle pazienti. L'attributo etichetta, ovvero quello su cui il modello di predizione proposto si è concertato, è l'esito della Biopsia, un esame eseguito su una porzione del tessuto sospetto in di accertare la presenza o meno di cellule tumorali attive. 
 \begin{table}
+	\centering
 	\caption{Tabella riportante gli attributi presenti nel dataset ed il relativo tipo.}
 	\label{tab:attributes}
 	\begin{tabular}{|c|c|}
-		\hline 
+		\toprule 
 		Attributo & DataType \\ 
-		\hline 
+		\midrule 
 		Age & Int \\ 
-		\hline 
 		Number of sexual partners & Int \\ 
-		\hline 
 		First sexual intercourse & Int \\ 
-		\hline 
-		Num of pregnancies & Int \\ 
-		\hline 
-		Smokes & Bool \\ 
-		\hline 
+		Num of pregnancies & Int \\  
+		Smokes & Bool \\  
 		Smokes (years) & Double \\ 
-		\hline 
 		Smokes (packs/year) & Double \\ 
-		\hline 
 		Hormonal Contraceptives & Bool \\ 
-		\hline 
 		Hormonal Contraceptives (years) & Double \\ 
-		\hline 
 		IUD & Bool \\ 
-		\hline 
 		IUD (years) & Double \\ 
-		\hline 
 		STDs & Bool \\ 
-		\hline 
 		STDs (number) & Int \\ 
-		\hline 
 		STDs:condylomatosis & Bool \\ 
-		\hline 
 		STDs:cervical condylomatosis & Bool \\ 
-		\hline 
 		STDs:vaginal condylomatosis & Bool \\ 
-		\hline 
 		STDs:vulvo-perineal condylomatosis & Bool \\ 
-		\hline 
 		STDs:syphilis & Bool \\ 
-		\hline 
 		STDs:pelvic inflammatory disease & Bool \\ 
-		\hline 
 		STDs:genital herpes & Bool \\ 
-		\hline 
 		STDs:molluscum contagiosum & Bool \\ 
-		\hline 
 		STDs:AIDS & Bool \\ 
-		\hline 
 		STDs:HIV & Bool \\ 
-		\hline 
 		STDs:Hepatitis B & Bool \\ 
-		\hline 
 		STDs:HPV & Bool \\ 
-		\hline 
-		STDs: Number of diagnosis & Int \\ 
-		\hline 
+		STDs: Number of diagnosis & Int \\  
 		STDs: Time since first diagnosis & Double \\ 
-		\hline 
 		STDs: Time since last diagnosis & Double \\ 
-		\hline 
 		Dx:Cancer & Bool \\ 
-		\hline 
 		Dx:CIN & Bool \\ 
-		\hline 
 		Dx:HPV & Bool \\ 
-		\hline 
 		Dx & Bool \\ 
-		\hline 
 		Hinselmann & Bool \\ 
-		\hline 
-		Schiller & Bool \\ 
-		\hline 
+		Schiller & Bool \\  
 		Citology & Bool \\ 
-		\hline 
 		Biopsy & Bool \\ 
-		\hline 
+		\bottomrule 
 	\end{tabular} 
 \end{table}
 
