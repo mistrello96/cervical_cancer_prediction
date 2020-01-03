@@ -34,10 +34,10 @@
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
 <entry key="node-bundle-version" type="xstring" value="4.1.0.v201912041211"/>
-<entry key="node-feature-name" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
-<entry key="node-feature-version" type="xstring" value="0.0.0"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.1.0.v201912201424"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Transpose"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -53,6 +53,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="51e82b04-a1f0-4d33-826b-012c3e773834"/>
+<entry key="file_store_id" type="xstring" value="98a2d145-cb1c-44d1-beea-1c965496ab44"/>
 </config>
 </config>
