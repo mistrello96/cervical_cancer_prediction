@@ -92,22 +92,6 @@
 </config>
 </config>
 </config>
-<config key="node_108">
-<entry key="id" type="xint" value="108"/>
-<entry key="node_settings_file" type="xstring" value="Per_fold F1 (#108)/workflow.knime"/>
-<entry key="node_is_meta" type="xboolean" value="true"/>
-<entry key="node_type" type="xstring" value="MetaNode"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1064"/>
-<entry key="1" type="xint" value="477"/>
-<entry key="2" type="xint" value="67"/>
-<entry key="3" type="xint" value="65"/>
-</config>
-</config>
-</config>
 <config key="node_109">
 <entry key="id" type="xint" value="109"/>
 <entry key="node_settings_file" type="xstring" value="Weka Predictor _3_7_ (#109)/settings.xml"/>
@@ -159,12 +143,6 @@
 <entry key="destPort" type="xint" value="0"/>
 </config>
 <config key="connection_2">
-<entry key="sourceID" type="xint" value="39"/>
-<entry key="destID" type="xint" value="108"/>
-<entry key="sourcePort" type="xint" value="1"/>
-<entry key="destPort" type="xint" value="0"/>
-</config>
-<config key="connection_3">
 <entry key="sourceID" type="xint" value="40"/>
 <entry key="destID" type="xint" value="109"/>
 <entry key="sourcePort" type="xint" value="2"/>
@@ -174,7 +152,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_4">
+<config key="connection_3">
 <entry key="sourceID" type="xint" value="40"/>
 <entry key="destID" type="xint" value="68"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -184,7 +162,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_5">
+<config key="connection_4">
 <entry key="sourceID" type="xint" value="68"/>
 <entry key="destID" type="xint" value="111"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -194,7 +172,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_6">
+<config key="connection_5">
 <entry key="sourceID" type="xint" value="99"/>
 <entry key="destID" type="xint" value="109"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -204,13 +182,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_7">
-<entry key="sourceID" type="xint" value="108"/>
-<entry key="destID" type="xint" value="-1"/>
-<entry key="sourcePort" type="xint" value="0"/>
-<entry key="destPort" type="xint" value="1"/>
-</config>
-<config key="connection_8">
+<config key="connection_6">
 <entry key="sourceID" type="xint" value="109"/>
 <entry key="destID" type="xint" value="39"/>
 <entry key="sourcePort" type="xint" value="1"/>
@@ -220,7 +192,7 @@
 <entry key="extrainfo.conn.bendpoints_size" type="xint" value="0"/>
 </config>
 </config>
-<config key="connection_9">
+<config key="connection_7">
 <entry key="sourceID" type="xint" value="111"/>
 <entry key="destID" type="xint" value="99"/>
 <entry key="sourcePort" type="xint" value="0"/>
@@ -258,13 +230,6 @@
 <config key="outport_0">
 <entry key="index" type="xint" value="0"/>
 <entry key="name" type="xstring" value="Connected to: Prediction table"/>
-<config key="type">
-<entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-</config>
-</config>
-<config key="outport_1">
-<entry key="index" type="xint" value="1"/>
-<entry key="name" type="xstring" value="Connected to: Collected results"/>
 <config key="type">
 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
 </config>
