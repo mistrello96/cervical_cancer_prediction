@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import numpy as np%%00010output_table = input_table.copy()%%00010bool_columns = ['STDs', 'Dx:CIN', 'Schiller']%%00010for col in bool_columns:%%00010%%00009output_table[col] = output_table[col].astype(bool)%%00010%%00009#output_table[col] = output_table[col].apply(lambda x: 'true' if x == True else 'false')"/>
+<entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import numpy as np%%00010output_table = input_table.copy()%%00010bool_columns = ['Smokes', 'Hormonal Contraceptives', 'IUD', 'STDs', 'STDs:condylomatosis',%%00010       'STDs:cervical condylomatosis', 'STDs:vaginal condylomatosis',%%00010       'STDs:vulvo-perineal condylomatosis', 'STDs:syphilis',%%00010       'STDs:pelvic inflammatory disease', 'STDs:genital herpes',%%00010       'STDs:molluscum contagiosum', 'STDs:AIDS', 'STDs:HIV',%%00010       'STDs:Hepatitis B', 'STDs:HPV', 'Dx:Cancer', 'Dx:CIN', 'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller',%%00010       'Citology']%%00010for col in bool_columns:%%00010%%00009try:%%00010%%00009%%00009output_table[col] = output_table[col].astype(bool)%%00010%%00009except:%%00010%%00009%%00009pass%%00010%%00009#output_table[col] = output_table[col].apply(lambda x: 'true' if x == True else 'false')"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>

@@ -60,6 +60,11 @@
 </config>
 </config>
 </config>
+<config key="PrecisionNumer_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="PrecisionNumer" type="xint" value="0"/>
 <config key="AppendColumns_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -70,26 +75,21 @@
 <entry key="EnabledStatus" type="xboolean" value="false"/>
 </config>
 <entry key="ColumnSuffix" type="xstring" value=" (rounded)"/>
-<config key="OutputType_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="OutputType" type="xstring" value="Double"/>
-<config key="PrecisionNumer_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="PrecisionNumer" type="xint" value="0"/>
-<config key="NumberMode_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="NumberMode" type="xstring" value="Decimal places"/>
 <config key="RoundingMode_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="RoundingMode" type="xstring" value="HALF_UP"/>
+<config key="OutputType_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="OutputType" type="xstring" value="Double"/>
+<config key="NumberMode_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="NumberMode" type="xstring" value="Decimal places"/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value=""/>

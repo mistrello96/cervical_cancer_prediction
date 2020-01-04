@@ -3,49 +3,48 @@
 Il dataset fornito presenta $858$ record, ognuno associato ad un totale di $36$ valori, etichetta inclusa. Un elenco degli attributi presenti nel dataset è riportata in Tabella \ref{tab:attributes}, dove viene altresì riportato il DataType associato ad ognuno di essi. I dati provengono da uno screening effettuato su una popolazione di donne in un ospedale di Caracas, Venezuela \todo{cita sito}, delle quali sono stati raccolti e riportati una serie di dati personali, medici e strumentali. In particolare, nel dataset è possibile individuare un gruppo di attributi relativi all'attività sessuale delle donne, al numero di partner ed al tipo di contraccettivo utilizzato (ormonale vs intrauterino - IUD -). Viene poi riportata una lunga lista di malattie sessualmente trasmissibili (STDs), il numero totale di patologie sessuali contratte e l'intervallo di tempo trascorso dalla prima e dall'ultima diagnosi di queste malattie. Sono infine presenti informazioni circa precedenti diagnosi di cancro o Papilloma Virus (DX) e i risultati di alcuni esami strumentali eseguiti sulle pazienti. L'attributo etichetta, ovvero quello su cui il modello di predizione proposto si è concertato, è l'esito della Biopsia, un esame eseguito su una porzione del tessuto sospetto in di accertare la presenza o meno di cellule tumorali attive. 
 \begin{table}
 	\centering
-	\caption{Tabella riportante gli attributi presenti nel dataset ed il relativo tipo.
-	\todo[inline]{Credo che, per come è stato fatto il corso, sia più corretto mettere nominale, ordinale, intervallo, ratio al posto del "tipo programmativo". DP}}
+	\caption{Tabella riportante gli attributi presenti nel dataset ed il relativo tipo.}
 	\label{tab:attributes}
 	\begin{tabular}{|c|c|}
 		\toprule 
 		Attributo & DataType \\ 
 		\midrule 
-		Age & Int \\ 
-		Number of sexual partners & Int \\ 
-		First sexual intercourse & Int \\ 
-		Num of pregnancies & Int \\  
-		Smokes & Bool \\  
-		Smokes (years) & Double \\ 
-		Smokes (packs/year) & Double \\ 
-		Hormonal Contraceptives & Bool \\ 
-		Hormonal Contraceptives (years) & Double \\ 
-		IUD & Bool \\ 
-		IUD (years) & Double \\ 
-		STDs & Bool \\ 
-		STDs (number) & Int \\ 
-		STDs:condylomatosis & Bool \\ 
-		STDs:cervical condylomatosis & Bool \\ 
-		STDs:vaginal condylomatosis & Bool \\ 
-		STDs:vulvo-perineal condylomatosis & Bool \\ 
-		STDs:syphilis & Bool \\ 
-		STDs:pelvic inflammatory disease & Bool \\ 
-		STDs:genital herpes & Bool \\ 
-		STDs:molluscum contagiosum & Bool \\ 
-		STDs:AIDS & Bool \\ 
-		STDs:HIV & Bool \\ 
-		STDs:Hepatitis B & Bool \\ 
-		STDs:HPV & Bool \\ 
-		STDs: Number of diagnosis & Int \\  
-		STDs: Time since first diagnosis & Double \\ 
-		STDs: Time since last diagnosis & Double \\ 
-		Dx:Cancer & Bool \\ 
-		Dx:CIN & Bool \\ 
-		Dx:HPV & Bool \\ 
-		Dx & Bool \\ 
-		Hinselmann & Bool \\ 
-		Schiller & Bool \\  
-		Citology & Bool \\ 
-		Biopsy & Bool \\ 
+		Age & Interval (Int) \\ 
+		Number of sexual partners & Interval (Int) \\ 
+		First sexual intercourse & Interval (Int) \\ 
+		Num of pregnancies & Interval (Int) \\  
+		Smokes & Nominal (Bool) \\  
+		Smokes (years) & Ratio (Double) \\ 
+		Smokes (packs/year) & Ratio (Double) \\ 
+		Hormonal Contraceptives & Nominal (Bool) \\ 
+		Hormonal Contraceptives (years) & Ratio (Double) \\ 
+		IUD & Nominal (Bool) \\ 
+		IUD (years) & Ratio (Double) \\ 
+		STDs & Nominal (Bool) \\ 
+		STDs (number) & Interval (Int) \\ 
+		STDs:condylomatosis & Nominal (Bool) \\ 
+		STDs:cervical condylomatosis & Nominal (Bool) \\ 
+		STDs:vaginal condylomatosis & Nominal (Bool) \\ 
+		STDs:vulvo-perineal condylomatosis & Nominal (Bool) \\ 
+		STDs:syphilis & Nominal (Bool) \\ 
+		STDs:pelvic inflammatory disease & Nominal (Bool) \\ 
+		STDs:genital herpes & Nominal (Bool) \\ 
+		STDs:molluscum contagiosum & Nominal (Bool) \\ 
+		STDs:AIDS & Nominal (Bool) \\ 
+		STDs:HIV & Nominal (Bool) \\ 
+		STDs:Hepatitis B & Nominal (Bool) \\ 
+		STDs:HPV & Nominal (Bool) \\ 
+		STDs: Number of diagnosis & Interval (Int) \\  
+		STDs: Time since first diagnosis & Interval (Int) \\ 
+		STDs: Time since last diagnosis & Interval (Int) \\ 
+		Dx:Cancer & Nominal (Bool) \\ 
+		Dx:CIN & Nominal (Bool) \\ 
+		Dx:HPV & Nominal (Bool) \\ 
+		Dx & Nominal (Bool) \\ 
+		Hinselmann & Nominal (Bool) \\ 
+		Schiller & Nominal (Bool) \\  
+		Citology & Nominal (Bool) \\ 
+		Biopsy & Nominal (Bool) \\ 
 		\bottomrule 
 	\end{tabular} 
 \end{table}

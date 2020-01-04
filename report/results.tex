@@ -5,20 +5,20 @@ In particolare si può notare come gli alberi di decisione inizino a mostrare un
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/pca-perf}
-	\caption{}
+	\caption{Performance ottenute dai due modelli analizzati al crescere del numero di componenti della PCA utilizzate.}
 	\label{fig:pca-perf}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{images/fscore}
-	\caption{}
+	\caption{Performance medie del processo di 5-fold \textit{stratified cross validation} sul dataset completo e dopo FR dei modelli analizzati.}
 	\label{fig:fscore}
 \end{figure}
 
 \begin{table}
 \centering
-\caption{Performance medie del processo di \textit{stratified 5-fold cross validation} sul dataset completo e dopo FR dei modelli analizzati.}
+\caption{Performance medie del processo di 5-fold \textit{stratified cross validation} sul dataset completo e dopo FR dei modelli analizzati.}
 \label{tab:f1score}
 \begin{tabular}{|c|c|c|}
 	\toprule
@@ -47,5 +47,13 @@ In particolare si può notare come gli alberi di decisione inizino a mostrare un
 		\bottomrule
 	\end{tabular}
 \end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/corr-perf}
+	\caption{Performance ottenute dai due modelli analizzati al crescere del valore di threshold del filtro di correlazione. Si noti che al crescere del valore di threshold, il numero di feature utilizzate cresce a sua volta}
+	\label{fig:corr-perf}
+\end{figure}
+
 
 \todo[inline]{Citazione biblio è strana con o accentate grandi DP}
