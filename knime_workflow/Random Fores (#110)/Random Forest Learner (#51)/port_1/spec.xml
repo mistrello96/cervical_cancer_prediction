@@ -8,7 +8,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -20,7 +20,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="84"/>
+<entry key="IntCell" type="xint" value="59"/>
 </config>
 </config>
 </config>
@@ -33,7 +33,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -45,7 +45,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="28"/>
+<entry key="IntCell" type="xint" value="6"/>
 </config>
 </config>
 </config>
@@ -58,7 +58,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -70,7 +70,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="32"/>
+<entry key="IntCell" type="xint" value="27"/>
 </config>
 </config>
 </config>
@@ -83,7 +83,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -95,7 +95,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="11"/>
+<entry key="IntCell" type="xint" value="8"/>
 </config>
 </config>
 </config>
@@ -108,7 +108,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -128,13 +128,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="false"/>
+<entry key="BooleanCell" type="xboolean" value="true"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="true"/>
+<entry key="BooleanCell" type="xboolean" value="false"/>
 </config>
 </config>
 </config>
@@ -160,7 +160,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="37.0"/>
+<entry key="DoubleCell" type="xdouble" value="34.0"/>
 </config>
 </config>
 </config>
@@ -185,7 +185,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
 <config key="org.knime.core.data.def.DoubleCell">
-<entry key="DoubleCell" type="xdouble" value="37.0"/>
+<entry key="DoubleCell" type="xdouble" value="22.0"/>
 </config>
 </config>
 </config>
@@ -198,7 +198,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -218,13 +218,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="false"/>
+<entry key="BooleanCell" type="xboolean" value="true"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 <config key="org.knime.core.data.def.BooleanCell">
-<entry key="BooleanCell" type="xboolean" value="true"/>
+<entry key="BooleanCell" type="xboolean" value="false"/>
 </config>
 </config>
 </config>
@@ -263,7 +263,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -328,7 +328,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -368,7 +368,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -393,7 +393,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -433,7 +433,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -473,7 +473,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -513,7 +513,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -553,7 +553,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -593,7 +593,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -633,7 +633,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -673,7 +673,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -713,7 +713,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -753,7 +753,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -793,7 +793,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -833,7 +833,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -873,7 +873,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -898,7 +898,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -938,7 +938,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -978,7 +978,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -1018,7 +1018,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -1058,7 +1058,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -1098,7 +1098,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -1138,7 +1138,7 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
 </config>
 <config key="column_domain">
 <config key="lower_bound">
@@ -1186,13 +1186,13 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="true"/>
+<entry key="StringCell" type="xstring" value="false"/>
 </config>
 </config>
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="false"/>
+<entry key="StringCell" type="xstring" value="true"/>
 </config>
 </config>
 </config>
@@ -1201,7 +1201,7 @@
 <config key="meta_data"/>
 </config>
 <config key="column_spec_34">
-<entry key="column_name" type="xstring" value="P (Biopsy=true)"/>
+<entry key="column_name" type="xstring" value="P (Biopsy=false)"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>
@@ -1226,7 +1226,7 @@
 <config key="meta_data"/>
 </config>
 <config key="column_spec_35">
-<entry key="column_name" type="xstring" value="P (Biopsy=false)"/>
+<entry key="column_name" type="xstring" value="P (Biopsy=true)"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>

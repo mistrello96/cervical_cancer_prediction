@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="sourceCode" type="xstring" value="output_table = input_table.copy()%%00010import matplotlib.pyplot as plt%%00010import seaborn as sns%%00010plt.figure(figsize = (8, 6))%%00010sns.countplot(x = 'Biopsy', data = input_table)%%00010plt.xlabel(&quot;Values&quot;, fontsize = 16)%%00010plt.ylabel(&quot;Number of instances&quot;, fontsize = 16)%%00010plt.title('Distribution of Biopsy outcome', fontsize = 18)%%00010plt.xticks(ticks = [0, 1], labels = ['negative', 'positive'], fontsize = 14)%%00010plt.yticks(fontsize = 14)%%00010plt.tight_layout()%%00010plt.savefig(flow_variables['knime.workspace'] + &quot;/images/biopsy_distribution.pdf&quot;, dpi = 300)%%00010plt.close()"/>
+<entry key="sourceCode" type="xstring" value="output_table = input_table.copy()%%00010import matplotlib.pyplot as plt%%00010import seaborn as sns%%00010plt.figure(figsize = (8, 6))%%00010ax = sns.countplot(x = 'Biopsy', data = input_table)%%00010for p in ax.patches:%%00010    ax.annotate('{}'.format(p.get_height()), (p.get_x() + 0.37, p.get_height() + 5))%%00010plt.xlabel(&quot;Values&quot;, fontsize = 16)%%00010plt.ylabel(&quot;Number of instances&quot;, fontsize = 16)%%00010plt.title('Distribution of Biopsy outcome', fontsize = 18)%%00010plt.xticks(ticks = [0, 1], labels = ['negative', 'positive'], fontsize = 14)%%00010plt.yticks(fontsize = 14)%%00010plt.tight_layout()%%00010plt.savefig(flow_variables['knime.workspace'] + &quot;/images/biopsy_distribution.pdf&quot;, dpi = 300)%%00010plt.close()"/>
 <entry key="rowLimit" type="xint" value="1000"/>
 <entry key="pythonVersionOption" type="xstring" value="python3"/>
 <entry key="python2Command" type="xstring" value=""/>
@@ -58,6 +58,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="1bbdfea2-a436-4890-9fea-ad4a4ba477fe"/>
+<entry key="file_store_id" type="xstring" value="bd73aecc-2ac1-42fc-bd7d-f81965b4ee7c"/>
 </config>
 </config>

@@ -83,7 +83,7 @@
 <entry key="enableZoom" type="xboolean" value="false"/>
 <entry key="enablePanning" type="xboolean" value="false"/>
 <entry key="showZoomResetButton" type="xboolean" value="false"/>
-<entry key="dataTableId" type="xstring" value="75376acc-addb-48ac-b46a-ebcaeefa33e4"/>
+<entry key="dataTableId" type="xstring" value="2a69a5d1-62e8-4a21-85fe-4d53b6d64d0e"/>
 <config key="filterIds">
 <entry key="array-size" type="xint" value="34"/>
 <entry key="0" type="xstring" isnull="true" value=""/>
