@@ -1,14 +1,13 @@
 \section{RISULTATI}
 Per quanto concerne le analisi relative alle performance (in termini di f1-\textit{score}, per i motivi precedentemente discussi) di DT e RF al variare del numero di feature estratte dal processo di PCA, i risultati (riportati in Figura \ref{fig:pca-perf}) mostrano come per un numero di componenti inferiore a $10$, le performance raggiunte dai modelli siano analoghe e pessime. Il trend si inverte con il raggiungimento della componente numero $12$, dove la tendenza varia completamente, portando le performance dei modelli ad assestarsi su valori decisamente migliori; dal grafico è possibile evincere come l'aumento della dimensionalità oltre le $12$ feature garantisca un incremento delle prestazioni marginale e fortemente inconsistente.
 A seguito di questa analisi, la dimensione ottimale utilizzata è pari a $12$; questo valore risulta essere un compromesso tra performance assolute e numero di feature considerate.
-In particolare, si può notare come gli alberi di decisione inizino a mostrare un degradamento delle performance attorno alla componente $19$, portando ad una flessione delle performance, mentre le RF tendano a migliorare leggermente le loro predizioni, presentando però continue variazioni tra una dimensione e l'altra.
+In particolare si può notare come gli alberi di decisione inizino a mostrare un degradamento delle performance attorno alla componente $19$, portando ad una flessione delle F1, mentre le RF tendano a migliorare leggermente le loro predizioni, presentando però continue variazioni tra una dimensione e l'altra.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/pca-perf}
 	\caption{}
 	\label{fig:pca-perf}
 \end{figure}
-
 
 \begin{figure}
 	\centering
@@ -43,7 +42,7 @@ In particolare, si può notare come gli alberi di decisione inizino a mostrare u
 		\toprule
 		Modello & F1 media \\ 
 		\midrule 
-		Decision Tree & $0.17$ \\  
+		Decision Tree & $0.21$ \\  
 		Random Forest  & $0.054$ \\ 
 		\bottomrule
 	\end{tabular}
