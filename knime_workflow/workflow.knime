@@ -8,7 +8,7 @@
 <entry key="authored-by" type="xstring" value="mistr"/>
 <entry key="authored-when" type="xstring" value="2019-12-27 11:04:54 +0100"/>
 <entry key="lastEdited-by" type="xstring" value="mistr"/>
-<entry key="lastEdited-when" type="xstring" value="2020-01-04 10:51:03 +0100"/>
+<entry key="lastEdited-when" type="xstring" value="2020-01-04 11:26:25 +0100"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
@@ -421,8 +421,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="544"/>
 <entry key="1" type="xint" value="1477"/>
-<entry key="2" type="xint" value="122"/>
-<entry key="3" type="xint" value="65"/>
+<entry key="2" type="xint" value="92"/>
+<entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
@@ -437,8 +437,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="544"/>
 <entry key="1" type="xint" value="1337"/>
-<entry key="2" type="xint" value="114"/>
-<entry key="3" type="xint" value="65"/>
+<entry key="2" type="xint" value="84"/>
+<entry key="3" type="xint" value="80"/>
 </config>
 </config>
 </config>
@@ -453,8 +453,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="544"/>
 <entry key="1" type="xint" value="997"/>
-<entry key="2" type="xint" value="84"/>
-<entry key="3" type="xint" value="80"/>
+<entry key="2" type="xint" value="114"/>
+<entry key="3" type="xint" value="65"/>
 </config>
 </config>
 </config>
@@ -469,8 +469,8 @@
 <entry key="array-size" type="xint" value="4"/>
 <entry key="0" type="xint" value="544"/>
 <entry key="1" type="xint" value="1157"/>
-<entry key="2" type="xint" value="94"/>
-<entry key="3" type="xint" value="80"/>
+<entry key="2" type="xint" value="124"/>
+<entry key="3" type="xint" value="65"/>
 </config>
 </config>
 </config>
@@ -1050,6 +1050,21 @@
 </config>
 <config key="connection_6">
 <entry key="sourceID" type="xint" value="33"/>
+<entry key="destID" type="xint" value="143"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
+<config key="ui_settings">
+<entry key="extrainfo.conn.bendpoints_size" type="xint" value="1"/>
+<config key="extrainfo.conn.bendpoints_0">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xint" value="211"/>
+<entry key="1" type="xint" value="1556"/>
+</config>
+</config>
+</config>
+<config key="connection_7">
+<entry key="sourceID" type="xint" value="33"/>
 <entry key="destID" type="xint" value="109"/>
 <entry key="sourcePort" type="xint" value="0"/>
 <entry key="destPort" type="xint" value="0"/>
@@ -1063,7 +1078,7 @@
 </config>
 </config>
 </config>
-<config key="connection_7">
+<config key="connection_8">
 <entry key="sourceID" type="xint" value="33"/>
 <entry key="destID" type="xint" value="110"/>
 <entry key="sourcePort" type="xint" value="0"/>
@@ -1078,7 +1093,7 @@
 </config>
 </config>
 </config>
-<config key="connection_8">
+<config key="connection_9">
 <entry key="sourceID" type="xint" value="33"/>
 <entry key="destID" type="xint" value="115"/>
 <entry key="sourcePort" type="xint" value="0"/>
@@ -1090,21 +1105,6 @@
 <entry key="array-size" type="xint" value="2"/>
 <entry key="0" type="xint" value="212"/>
 <entry key="1" type="xint" value="1215"/>
-</config>
-</config>
-</config>
-<config key="connection_9">
-<entry key="sourceID" type="xint" value="33"/>
-<entry key="destID" type="xint" value="143"/>
-<entry key="sourcePort" type="xint" value="0"/>
-<entry key="destPort" type="xint" value="0"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
-<config key="ui_settings">
-<entry key="extrainfo.conn.bendpoints_size" type="xint" value="1"/>
-<config key="extrainfo.conn.bendpoints_0">
-<entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xint" value="211"/>
-<entry key="1" type="xint" value="1556"/>
 </config>
 </config>
 </config>
