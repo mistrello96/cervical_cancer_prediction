@@ -25,7 +25,7 @@ Stabiliti quali fossero i parametri ottimali per le tecniche di \textit{feature 
 		\toprule
 		Modello & Tecnica da FR & f1 media \\ 
 		\midrule 
-		Decision Tree & / & $0.647$ \\  
+		Decision Tree & / & $0.647$ \\
 		Random Forest & / & $0.715$ \\ 
 		Decision Tree & Filtro correlazione & $0.607$ \\ 
 		Random Forest & Filtro correlazione & $0.727$ \\ 
@@ -34,7 +34,7 @@ Stabiliti quali fossero i parametri ottimali per le tecniche di \textit{feature 
 		\bottomrule
 	\end{tabular}
 \end{table}
-I risultati dei processi di SCV sono riportati in maniera analitica in Tabella \ref{tab:f1score} e nella Figura \ref{fig:fscore}, dalla quale è possibile notare come le performance medie dei modelli derivanti dalle \textit{random forest} risultino essere migliori rispetto a quelli derivanti dagli alberi di decisione. Allo stesso modo è possibile notare come le performance medie migliori siano ottenete dal filtro delle feature basato sulla correlazione, mentre PCA e il datset completo mostrano performance inferiori. 
+I risultati dei processi di SCV sono riportati in maniera analitica in Tabella \ref{tab:f1score} e nella Figura \ref{fig:fscore}, dalla quale è possibile notare come le performance medie dei modelli derivanti dalle random forest risultino essere migliori rispetto a quelli derivanti dagli alberi di decisione. Allo stesso modo è possibile notare come le performance medie migliori siano ottenete dal filtro delle feature basato sulla correlazione, mentre PCA e il dataset completo mostrano performance inferiori. 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{images/fscore}
@@ -45,7 +45,7 @@ Al fine di stabilire se le differenze tra i vari modelli fossero statisticamente
 Analizzando in modo qualitativo i risultati associati ad ogni fold, è stata rilevata una forte eterogeneità nelle performance di ogni modello all'interno delle varie fold; un esempio di quanto affermato è riportato in Tabella \ref{tab:f1fold}, dove è possibile constatare come il range delle performance vari di oltre $20$ punti percentuali tra un fold e l'altro. Questo comportamento è probabilmente dovuto all'esiguo numero di sample disponibili, sia in fase di train che di test. Pur aumentando in maniera artificiale il numero di esempi della classe minoritaria nel train set, i sample sintetici risulteranno molto simili agli esempi già presenti nel train set e, se essi non sono una fedele rappresentazione della distribuzione reale dei dati a causa del numero limitato di sample a disposizione, l'algoritmo di apprendimento automatico non sarà in grado di generalizzare correttamente. 
 \begin{table}
 	\centering
-	\caption{Performance ottenute dalla \textit{random forest} con l'intero dataset in input nei vari fold della CV.}
+	\caption{Performance ottenute dalla random forest con l'intero dataset in input nei vari fold della CV.}
 	\label{tab:f1fold}
 	\begin{tabular}{|c|c|}
 		\hline 
@@ -68,7 +68,7 @@ Lo studio è proseguito confrontando tra loro i modelli con input differenti; co
 \todo{controllare che i t test dicano effettivamente questo MM}
 
 Un'ultima analisi realizzata in questo lavoro è stata come la rimozione degli attributi relativi agli esami clinici effettuati sulle pazienti potesse inficiare le performance predittive degli algoritmi di predizione considerati. Al dataset sono stati rimossi gli attributi \textit{Hinselmann, Schiller} e \textit{Citology}, ovvero i risultati dei 3 esami clinici effettuati sulle pazienti. Il processo di addestramento dei modelli è stato eseguito nelle medesime condizioni dei precedenti, ovvero utilizzando un processo di 5-fold \textit{stratified cross validation} con oversampling sul train set. I risultati, riportati in Tabella \ref{tab:noexamsscore}, mostrano un drastico peggioramento delle performance predittive; ciò suggerisce che l'esecuzioni di questi esami (o di alcuni di essi) sia imprescindibile al fine di un corretto riconoscimento dei pazienti affetti dal cancro alla cervice da parte del modello. Risulta altresì improbabile la corretta classificazione di un paziente a partire unicamente dai relativi dati dell'anamnesi.
-I risultati sono di particolare interesse se incrociati con quelli ottenuti nella fase di ricerca del threshold per il filtro basato sulla correlazione. In quello studio, il valore di correlazione proposto risultava molto basso, portando all'utilizzo di sole 5 feature che erano però in grado di garantire performance ottimali dei modelli. Tra di esse risulta presente l'attributo \textit{Schiller}, che viene invece rimosso nel test appena proposto, in cui le performance risultano pesantemente degradate. Possiamo quindi supporre che questo attributo porti con se una grande quantità di informazione; per questo motivo, nel caso in cui non fosse possibile eseguire tutti gli esami clinici proposti per motivi economici o tecnici, l'esecuzione del solo esame \textit{Schiller} garantirebbe un sostanziale incremento delle performance del modello, portando così a predizioni più accurate.
+I risultati sono di particolare interesse se incrociati con quelli ottenuti nella fase di ricerca del threshold per il filtro basato sulla correlazione. In quello studio, il valore soglia proposto risultava molto basso, portando all'utilizzo di sole 5 feature che erano però in grado di garantire performance ottimali dei modelli. Tra di esse risulta presente l'attributo \textit{Schiller}, che viene invece rimosso nel test appena proposto, in cui le performance risultano pesantemente degradate. Possiamo quindi supporre che questo attributo porti con se una grande quantità di informazione; per questo motivo, nel caso in cui non fosse possibile eseguire tutti gli esami clinici proposti per motivi economici o tecnici, l'esecuzione del solo esame \textit{Schiller} garantirebbe un sostanziale incremento delle performance del modello, portando così a predizioni più accurate.
 \begin{table}
 	\centering
 	\caption{Performance medie del processo di \textit{stratified 5-fold cross validation} dei modelli senza considerare le feature relative ad esami strumentali effettuati sulle pazienti.}
@@ -77,8 +77,8 @@ I risultati sono di particolare interesse se incrociati con quelli ottenuti nell
 		\toprule
 		Modello & f1 media \\ 
 		\midrule 
-		Decision Tree & $0.201$ \\  
-		Random Forest  & $0.165$ \\ 
+		Decision Tree & $0.201$ \\
+		Random Forest & $0.165$ \\ 
 		\bottomrule
 	\end{tabular}
 \end{table}
