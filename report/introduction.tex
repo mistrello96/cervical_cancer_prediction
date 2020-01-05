@@ -1,15 +1,14 @@
 \section{INTRODUCTION}
-Il cancro alla cervice uterina è la terza forma di tumore più diffusa tra le donne, dopo quelle al seno e al colon-retto. La patologia aggredisce le cellule del collo dell’utero, ovvero il segmento che pone in collegamento l’utero con la vagina. Rispetto ad altre neoplasie, il tumore della cervice uterina ha il vantaggio di essere del tutto prevenibile e comunque ben curabile se rilevato precocemente. \cite{veronesi}
-Nonostante la possibilità di prevenzione offerta da uno screening citologico regolare, questa forma di tumore colpisce oltre mezzo milione di donne all'anno, con un tasso di mortalità di oltre il $50\%$; la maggioranza dei decessi avviene in aree del mondo poco sviluppato, dove non è disponibile un meccanismo di screening regolare e sistematico sulla popolazione, che permetterebbe un riconoscimento precoce delle lesioni che precedono il tumore, permettendo così un intervento tempestivo dei medici. \cite{paper}
-I maggiori fattori di rischio, che favoriscono la comparsa di questo tipo di cancro, sono individuabili principalmente nelle malattie sessualmente trasmissibili, in particolare nel papilloma virus.\\
-In questo lavoro è stato utilizzato un dataset contenete i dettagli di anamnesi ed esami clinici relativi a un campione di $858$ donne al fine di stabilire se sia possibile realizzare un modello di predizione efficace per stabilire l'esito della biopsia del tessuto uterino a partire dai dati raccolti.
-In particolare, sono stati messi a confronto diversi modelli di apprendimento automatico considerati \textit{explainable}, ovvero in grado di motivare il risultato della predizione fornita, in quanto in ambito medico modelli \textit{black box} risultano spesso non adatti in quanto non interpretabili dai medici.
+Il cancro alla cervice uterina è la terza forma di tumore più diffusa tra le donne, dopo quelle al seno e al colon-retto. La patologia aggredisce le cellule del collo dell’utero, ovvero il segmento che pone in collegamento l’utero con la vagina. Rispetto ad altre neoplasie, il tumore della cervice uterina ha il vantaggio di essere del tutto prevenibile e comunque ben curabile se rilevato precocemente \cite{veronesi}.
+Nonostante la possibilità di prevenzione offerta da uno screening citologico regolare, questa forma di tumore colpisce oltre mezzo milione di donne all'anno, con un tasso di mortalità di oltre il $50\%$; la maggioranza dei decessi avviene in aree del mondo poco sviluppato, dove non è disponibile un meccanismo di screening regolare e sistematico sulla popolazione, che permetterebbe un riconoscimento precoce delle lesioni che precedono il tumore, permettendo così un intervento tempestivo dei medici \cite{paper}.
+I maggiori fattori di rischio, che favoriscono la comparsa di questo tipo di cancro, sono individuabili principalmente nelle malattie sessualmente trasmissibili, in particolare nel Papilloma virus.\\
+In questo lavoro, è stato utilizzato un dataset contenete i dettagli di anamnesi ed esami clinici relativi a un campione di $858$ donne al fine di stabilire se sia possibile realizzare un modello di predizione efficace per stabilire l'esito della biopsia del tessuto uterino a partire dai dati raccolti.
+In particolare, sono stati messi a confronto diversi modelli di apprendimento automatico considerati \textit{explainable}, ovvero in grado di motivare il risultato della predizione fornita, in quanto in ambito medico modelli \textit{black box} risultano spesso non adatti per via della bassa interpretabilità da parte dei medici.
 Gli obiettivi di questo lavoro possono essere riassunti come segue:
 \begin{itemize}
-	\item esplorazione e pulizia dei dati;
+	\item esplorazione e pulizia del datase};
 	\item confronto di differenti tecniche di feature reduction;
-	\item creazione di un modello per la classificazione delle etichette;
+	\item addestramento di vari modelli per predire si i soggetti sono affetti dalla patologia;
 	\item confronto dei vari modelli al fine di determinare quello con performance ottimali.
 \end{itemize}
-\todo{rivedere obiettivi x papetti, MM}
-Il report è stato suddiviso nelle seguenti sezioni: (II) introduzione al dataset e operazioni di esplorazione e pulizia dei dati, (III) presentazioni dei metodi utilizzati per la creazione di una serie di modelli predittivi, (IV) presentazione ed analisi dei risultati ottenuti, (V) conclusioni e possibili sviluppi futuri.
+Il report è stato suddiviso nelle seguenti sezioni: (II) introduzione al dataset e operazioni di esplorazione e pulizia dei dati; (III) presentazioni dei metodi utilizzati per la creazione di una serie di modelli predittivi; (IV) presentazione ed analisi dei risultati ottenuti; (V) conclusioni e possibili sviluppi futuri.
