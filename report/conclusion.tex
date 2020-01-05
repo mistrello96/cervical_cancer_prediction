@@ -1,1 +1,18 @@
 \section{CONCLUSIONI E SVILUPPI FUTURI}
+Nel lavoro appena presentato è stato analizzato un dataset derivante dai dati di $858$ pazienti di un ospedale di Caracas che si sono sottoposte ad approfondimenti per la prevenzione del tumore alla cervice uterina.
+Dopo aver eseguito analisi esplorative del dataset, che hanno mostrato un forte sbilanciamento dei record verso la non presenza del tumore, il dataset è stato sottoposto a operazioni di \textit{cleaning} e \textit{preprocessing}, rimuovendo due attributi a causa della scarsa rappresentazione dei record e effettuando operazioni di imputazioni sui molti \textit{missing values} presenti nel dataset.
+A seguito della rimozione degli outlier, sono state eseguite analisi esplorative dei record che presentavano biopsia positiva, analizzando la distribuzione dei fattori di rischio noti in letteratura.
+L'analisi effettuata ha confermato in parte le informazioni apprese sulla malattia, evidenziando un range di età compatibile e una possibile relazione tra malattie sessualmente trasmissibili e lo sviluppo del cancro.
+L'analisi della correlazione tra gli attributi ha evidenziato valori elevati per molte delle feature presenti.\\
+Terminate le operazioni di \textit{preprocessing} sul dataset, sono stati utilizzati due differenti algoritmi di apprendimento automatico, decision tree e random forest, per effettuare la classificazione dei record.
+Al fine di stabilire se una tecnica di feature reduction potesse portare beneficio al processo di addestramento degli algoritmi, sono state realizzate tre pipeline parallele; la prima utilizza l'intero dataset, la seconda applica una PCA e la terza un filtro che sfrutta la correlazione.
+Il numero di componenti della PCA e il threshold del filtro sono stati stabiliti mediante un'indagine delle performance dei modelli a seguito della modifica di questi valori.
+Stabiliti gli iperparametri ottimali per le tecniche di riduzione della dimensionalità, gli algoritmi sono stati addestrati in un processo di 5-fold \textit{startified cross validation}, utilizzando SMOTE come tecnica di \textit{oversampling} sulla porzione di train del dataset.
+L'utilizzo di tale tecnica è motivato da un'analisi qualitativa che ha mostrato un miglioramento (un non peggioramento alla peggio) delle performance degli algoritmi.
+I risultati delle random forest hanno mostrato performance medie leggermente superiori rispetto ai rispettivi alberi, ma i test di significatività non hanno rilevato una differenza statisticamente significativa (fatta eccezione per i modelli con input il dataset ridotto tramite filtro). Anche un confronto tra modelli con input differenti non ha evidenziato una differenza significativa tra le medie.
+Infine, è stato effettuato un tentativo di addestrare gli algoritmi precedenti in assenza delle feature relative agli esami strumentali effettuati dalle pazienti. Le performance ottenute hanno mostrato un drastico deterioramento, confermando la necessità di queste analisi al fine di un corretto riconoscimento della patologia.\\
+
+Considerando le conclusioni appena proposte, in futuro sarebbe necessario raccogliere dati su una popolazione sensibilmente più ampia, in modo da non essere più limitati dalla scarsa rappresentazione di record che presentano la patologia e rendendo altresì più significative le analisi e più robusti i modelli proposti.
+Un ulteriore punto di sviluppo di questo lavoro potrebbe scaturire tramite il confronto con esperti del dominio medico, grazie ai quali si potrebbe ottenere una stima più accurata del peso dei diversi tipi di predizioni errate del modello, in modo da ottimizzarlo secondo i nuovi criteri proposti.
+
+\todo{uniformare maiuscolo minuscolo per decision tree e random forest MM}

@@ -111,7 +111,6 @@ Gli studi effettuati devono quindi essere interpretati unicamente come un'analis
 \todo{controllare quest'ultima frase conclusiva MM}
 \begin{figure}
 	\centering
-	\label{fig:dist}
 	\begin{tabular}{c}
 		\subfloat[\label{subfig:dist-age} KDE (\textit{Kernel Density Estimation}) delle istanze appartenenti alla classe positiva al variare dell'età.]{\includegraphics[width = 1\linewidth]{images/distribution_among_age}} \\
 		\subfloat[\label{subfig:dist-smoke}KDE delle istanze appartenenti alla classe positiva al variare del numero di pacchetti di sigarette consumati all'anno.]{\includegraphics[width = 1\linewidth]{images/distribution_among_smoke}}
@@ -121,7 +120,9 @@ Gli studi effettuati devono quindi essere interpretati unicamente come un'analis
 		\subfloat[\label{subfig:dist-hpv}Istogramma rappresentante la distribuzione dei soggetti affetti dalla patologia che hanno contratto il Papilloma Virus (HPV).]{\includegraphics[width = .5\linewidth]{images/distribution_among_hpv}}
 	\end{tabular}
 	%\caption{Distribuzione dei soggetti affetti dalla patologia rispetto a varie feature.}
+	\label{fig:dist}
 \end{figure}
+\todo{Fix della caption, oppure il ref alla figura non va}
 
 \subsection{Data cleaning and preprocessing}
 È stata dapprima indagata la presenza di valori mancanti nel dataset, rilevando come i due attributi relativi alla data della prima e ultima diagnosi di malattie sessualmente trasmissibili presentassero un numero elevatissimo di valori nulli; per questo motivo è stato deciso di rimuovere dal dataset questi dati, in quanto un tentativo di imputazione di questi valori si sarebbe dovuto basare su un numero di sample davvero esiguo. Non è invece stata rilevata la presenza di record con un elevato numero di attributi mancanti.

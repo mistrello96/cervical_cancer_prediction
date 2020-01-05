@@ -16,7 +16,7 @@ La medesima analisi è stata effettuata sul grafico riportato in Figure \ref{fig
 	\label{fig:corr-perf}
 \end{figure}
 
-Stabiliti quali fossero i parametri ottimali per le tecniche di \textit{feature reduction}, i vari algoritmi sono stati addestrati sui vari dataset prodotti. In particolare, per ogni input sono state testate sia alberi di decisione che \textit{random forest}. Nel processo di train è stato deciso di utilizzare la tecnica di oversampling in quanto i risultati di alcuni test preliminari effettuati hanno mostrato come l'utilizzo di tale approccio sia in grado di garantire in alcuni performance migliori rispetto alla versione non alterata del dataset; nei casi restanti SMOTE è risultato semplicemente inefficace, senza indurre un peggioramento delle performance predittive.
+Stabiliti quali fossero i parametri ottimali per le tecniche di \textit{feature reduction}, i vari algoritmi sono stati addestrati sui vari dataset prodotti. In particolare, per ogni input sono state testate sia alberi di decisione che random forest. Nel processo di train è stato deciso di utilizzare la tecnica di oversampling in quanto i risultati di alcuni test preliminari effettuati hanno mostrato come l'utilizzo di tale approccio sia in grado di garantire in alcuni performance migliori rispetto alla versione non alterata del dataset; nei casi restanti SMOTE è risultato semplicemente inefficace, senza indurre un peggioramento delle performance predittive.
 \begin{table}
 	\centering
 	\caption{Performance medie del processo di 5-fold \textit{stratified cross validation} sul dataset completo e dopo FR dei modelli analizzati.}
