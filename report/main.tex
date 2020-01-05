@@ -45,17 +45,17 @@ Performance Time Report
 
 \begin{abstract}
 
-Il cancro alla cervice uterina è una delle forme di tumore più diffusi tra le donne e con un tasso di mortalità ulteriore al $50\%$.
+Il cancro alla cervice uterina è una delle forme di tumore più diffuse tra le donne e con un tasso di mortalità maggiore del $50\%$.
 Nonostante sia possibile riconoscerlo durante le fasi iniziale del suo sviluppo grazie a un continuo monitoraggio, in aree del mondo poco sviluppate ciò non è possibile incrementando il tasso di mortalità.
-In questo lavoro si cerca di sviluppare un modello che ha lo scopo di aiutare i medici nel processo di diagnosi di tale patologia. 
-In particolare, un modello in grado di predire se un soggetto, in funzione di un insieme di attributi, sarà soggetto alla patologia oppure no.
-Il dataset utilizzato contiene le informazioni di $585$ pazienti i cui dati sono stati raccolti in un opedale di Caracas \cite{ML}.
+In questo lavoro, si cerca di sviluppare un modello che ha lo scopo di aiutare i medici nel processo di diagnosi di tale patologia. 
+In particolare, un modello in grado di predire se un soggetto, in funzione di un insieme di attributi, sarà affetto dalla patologia oppure no.
+Il dataset utilizzato contiene le informazioni di $858$ pazienti i cui dati sono stati raccolti in un ospedale di Caracas \cite{ML}.
 Studi esplorativi del dataset evidenziano che si tratta di un problema binario (\textit{i.e.}, il paziente soffre o no della patologia) estremamente sbilanciato (10 - 90) in favore della classe rappresentante l'assenza del tumore.
 Dopo aver effettuato delle operazioni di \textit{preprocessing}, si è deciso di addestrare due modelli per tre possibili input differenti.
-I modelli indagati sono stati i DT (Decision Tree) e le (Random Forest), la scelta di questi modelli è dovuta alla loro caratteristica di essere \textit{explainable} che ne favorisce l'utilizzo in ambito medico.
+I modelli indagati sono stati i DT (Decision Tree) e le RF (Random Forest), la scelta di questi modelli è dovuta alla loro caratteristica di essere \textit{explainable} che ne favorisce l'utilizzo in ambito medico.
 Mentre, i tre possibili input utilizzati sono il dataset senza nessun operazione di feature reduction, il dataset dopo l'operazione di feature selection basata su correlazione e infine delle feature estratte mediante il processo della PCA (Principal Component Analysis).
-Poiché sia la PCA che la feature selection sfruttano un iperparametro (\textit{e.g.}, il numero di componenti), sono stati effettuati degli studi preliminari qualitativi su questi iperparametri in modo da selezionare dei relativi valori ottimali.
-Per ogni possibile input i modelli sono stati valutati secondo un procedimento di 5-fold \textit{stratified cross-validation} e la metrica utilizzata è la f1-\textit{score} rispetto alla classe minoritaria (\textit{i.e.}, biopsia positiva).
+Poiché sia la PCA che la feature selection sfruttano un iperparametro (\textit{e.g.}, il numero di componenti prodotti dalla PCA), sono stati effettuati degli studi preliminari qualitativi su questi iperparametri in modo da selezionare dei relativi valori ottimali.
+Per ogni possibile input i modelli sono stati valutati secondo un procedimento di 5-fold \textit{stratified cross-validation} e la metrica utilizzata è la f1-\textit{score}\todo{dovremo uniformare anche a f1-measure o f1-score} rispetto alla classe minoritaria (\textit{i.e.}, biopsia positiva).
 Per favorire l'apprendimento del modello, i train set ad ogni iterazione del processo, sono stati arricchiti mediante la tecnica di \textit{oversampling} SMOTE (Synthetic Minority Over-sampling TEchnique).
 Successivamente, il confronto è stato effettuato sfruttando dei t-test \textit{paired} prima tra i due modelli appartenenti alla stessa strategia di input e poi tra i migliori di ogni strategia.
 I risultati evidenziano che non vi sono differenze statstiche tra i modelli addestrati sfruttando l'intero dataset o con le feature prodotte dal processo di PCA, invece le RF risultano statisticamente migliori del DT nel caso dell'operazione di feature selection.
