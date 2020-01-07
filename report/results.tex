@@ -1,7 +1,7 @@
 \section{RISULTATI}
-Per quanto concerne le analisi relative alle performance (in termini di f1-\textit{score}, per i motivi precedentemente discussi) di DT e RF al variare del numero di feature estratte dal processo di PCA, i risultati (riportati in Figura \ref{fig:pca-perf}) mostrano come per un numero di componenti inferiore a $10$, le performance raggiunte dai modelli siano analoghe e pessime. Il trend si inverte con il raggiungimento della componente numero $12$, dove la tendenza varia completamente, portando le performance dei modelli ad assestarsi su valori decisamente migliori; dal grafico è possibile evincere come l'aumento della dimensionalità oltre le $12$ feature garantisca un incremento delle prestazioni marginale e fortemente inconsistente.
+Per quanto concerne le analisi relative alle performance (in termini di f1-\textit{measure}, per i motivi precedentemente discussi) di DT e RF al variare del numero di feature estratte dal processo di PCA, i risultati (riportati in Figura \ref{fig:pca-perf}) mostrano come per un numero di componenti inferiore a $10$, le performance raggiunte dai modelli siano analoghe e pessime. Il trend si inverte con il raggiungimento della componente numero $12$, dove la tendenza varia completamente, portando le performance dei modelli ad assestarsi su valori decisamente migliori; dal grafico è possibile evincere come l'aumento della dimensionalità oltre le $12$ feature garantisca un incremento delle prestazioni marginale e fortemente inconsistente.
 A seguito di questa analisi, la dimensione ottimale utilizzata è pari a $12$; questo valore risulta essere un compromesso tra performance assolute e numero di feature considerate.
-In particolare si può notare come gli alberi di decisione inizino a mostrare un degradamento delle performance attorno alla componente $19$, portando ad una flessione delle F1, mentre le RF tendano a migliorare leggermente le loro predizioni, presentando però continue variazioni tra una dimensione e l'altra.\\
+In particolare si può notare come gli alberi di decisione inizino a mostrare un degradamento delle performance attorno alla componente $19$, portando ad una flessione delle f1-\textit{measure}, mentre le RF tendano a migliorare leggermente le loro predizioni, presentando però continue variazioni tra una dimensione e l'altra.\\
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{images/pca-perf}
@@ -9,7 +9,7 @@ In particolare si può notare come gli alberi di decisione inizino a mostrare un
 	\label{fig:pca-perf}
 \end{figure}
 \todo[inline]{Sbaglio o non diciamo nei metodi che facciamo comunque una 5 fold stratiicata per il test sulla dimensione della PCA e non citiamo da nessuna parte che facciamo un test analogo con la soglia della feature selection su correlazione? DP}
-La medesima analisi è stata effettuata sul grafico riportato in Figure \ref{fig:corr-perf} relativo ai risultati dei due modelli al variare del threshold di correlazione utilizzato nella feature selection. Sorprendentemente, la soglia corrispondente a valori ottimali è estremamente bassa, pari a $0.15$; questo valore porta alla rimozione di quasi tutte le feature del dataset, mantenendo solo 5 attributi. Questo risultato porta a pensare che le feature del dataset siano fortemente correlate tra loro, costituendo in larga parte informazione ridondante. Anche in questo caso, come nel precedente, l'aggiunta di feature ulteriori sembra "distrarre" il classificatore, provocando un deterioramento delle performance significativo, salvo poi recuperare avvicinandosi alla situazione del dataset completo.
+La medesima analisi è stata effettuata sul grafico riportato in Figure \ref{fig:corr-perf} relativo ai risultati dei due modelli al variare del threshold di correlazione utilizzato nella feature selection. Sorprendentemente, la soglia corrispondente a valori ottimali è estremamente bassa, pari a $0.15$; questo valore porta alla rimozione di quasi tutte le feature del dataset, mantenendo solo 5 feature. Questo risultato porta a pensare che le feature del dataset siano fortemente correlate tra loro, costituendo in larga parte informazione ridondante. Anche in questo caso, come nel precedente, l'aggiunta di feature ulteriori sembra "distrarre" il classificatore, provocando un deterioramento delle performance significativo, salvo poi recuperare avvicinandosi alla situazione del dataset completo.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{images/corr-perf}
@@ -25,7 +25,7 @@ Nei casi restanti SMOTE è risultato semplicemente inefficace, senza indurre un 
 	\label{tab:f1score}
 	\begin{tabular}{|c|c|c|}
 		\toprule
-		Modello & Tecnica da FR & f1 media \\ 
+		Modello & Tecnica da FR & f1-\textit{measure} media \\ 
 		\midrule 
 		Decision Tree & / & $0.647$ \\
 		Random Forest & / & $0.715$ \\ 
@@ -44,8 +44,7 @@ I risultati dei processi di SCV sono riportati in maniera analitica in Tabella \
 	\label{fig:fscore}
 \end{figure}
 Al fine di stabilire se le differenze tra i vari modelli fossero statisticamente significative, è stato deciso di effettuare una serie di \textit{paired t-test} sulle performance dei vari modelli proposti nei vari fold della CV.
-Analizzando in modo qualitativo i risultati associati ad ogni fold, è stata rilevata una forte eterogeneità nelle performance di ogni modello all'interno dei vari fold; un esempio di quanto affermato è riportato in Tabella \ref{tab:f1fold}, dove è possibile constatare come il range delle performance vari di oltre $20$ punti percentuali tra un fold e l'altro. Questo comportamento è probabilmente dovuto all'esiguo numero di sample disponibili, sia in fase di train che di test \todo[inline]{messa così è affermazione forte, io espanderei. DP}. Pur aumentando in maniera artificiale il numero di esempi della classe minoritaria nel train set, i sample sintetici risulteranno molto simili agli esempi già presenti nel train set e, se essi non sono una fedele rappresentazione della distribuzione reale dei dati a causa del numero limitato di sample \todo[inline]{o uniformiamo a record o a sample o a esempio, stessa cosa dobbiamo fare con attributo o feature. Altrimenti si rischia di confondere il lettore, no joking. DP} a disposizione, l'algoritmo di apprendimento automatico non sarà in grado di generalizzare correttamente. 
-\todo[inline]{Il fatto che Table sia scritto in Inglese mi triggera non poco, c'è un modo per fixare? DP}
+Analizzando in modo qualitativo i risultati associati ad ogni fold, è stata rilevata una forte eterogeneità nelle performance di ogni modello all'interno dei vari fold; un esempio di quanto affermato è riportato in Tabella \ref{tab:f1fold}, dove è possibile constatare come il range delle performance vari di oltre $20$ punti percentuali tra un fold e l'altro. Questo comportamento è probabilmente dovuto all'esiguo numero di sample disponibili, sia in fase di train che di test \todo[inline]{messa così è affermazione forte, io espanderei. DP}. Pur aumentando in maniera artificiale il numero di sample della classe minoritaria nel train set, i sample sintetici risulteranno molto simili a quelli già presenti nel train set e, se essi non sono una fedele rappresentazione della distribuzione reale dei dati a causa del numero limitato di sample a disposizione, l'algoritmo di apprendimento automatico non sarà in grado di generalizzare correttamente. 
 \todo[inline]{Io aggiungere un altro esempio di performance, tanto spazio in più non lo occupiamo e facciamo vedere che non abbiamo preso il caso più sfigato DP}
 \begin{table}
 	\centering
@@ -53,7 +52,7 @@ Analizzando in modo qualitativo i risultati associati ad ogni fold, è stata ril
 	\label{tab:f1fold}
 	\begin{tabular}{|c|c|}
 		\hline 
-		Fold & f1 \\ 
+		Fold & f1-\textit{measure} \\ 
 		\hline 
 		$1$ & $0.615$ \\ 
 		\hline 
@@ -71,11 +70,11 @@ A conferma di quanto osservato, i test statistici non hanno evidenziato una diff
 Lo studio è proseguito confrontando tra loro i modelli con input differenti; considerando i risultati dei test statistici appena presentati, è stato deciso di selezionare arbitrariamente le foreste per l'intero dataset e per la PCA (sarebbero stati allo stesso modo validi gli alberi di decisione, visto che non hanno mostrato performance medie statisticamente differenti), mentre per la tecnica di riduzione mediante correlazione è stata scelta la random forest in quanto mostrava performance migliori rispetto al corrispettivo albero di decisione. I risultati dei \textit{paired} t-test hanno mostrato nuovamente come non vi sia differenza statisticamente rilevante tra le performance medie dei modelli confrontati.
 \todo{controllare che i t test dicano effettivamente questo MM}
 \todo{Questi spazi continuano a farmi vomitare sempre più DP}
-Un'ultima analisi realizzata in questo lavoro è stata come la rimozione degli attributi relativi agli esami clinici effettuati sulle pazienti potesse inficiare le performance predittive degli algoritmi di predizione considerati. Al dataset sono stati rimossi gli attributi \textit{Hinselmann, Schiller} e \textit{Citology}, ovvero i risultati dei 3 esami clinici effettuati sulle pazienti. Il processo di addestramento dei modelli è stato eseguito nelle medesime condizioni dei precedenti, ovvero utilizzando un processo di 5-fold \textit{stratified cross-validation} con \textit{oversampling} sul train set.
+Un'ultima analisi realizzata in questo lavoro è stata come la rimozione delle feature relative agli esami clinici effettuati sulle pazienti potesse inficiare le performance predittive degli algoritmi di predizione considerati. Al dataset sono state rimosse le colonne \textit{Hinselmann, Schiller} e \textit{Citology}, ovvero i risultati dei 3 esami clinici effettuati sulle pazienti. Il processo di addestramento dei modelli è stato eseguito nelle medesime condizioni dei precedenti, ovvero utilizzando un processo di 5-fold \textit{stratified cross-validation} con \textit{oversampling} sul train set.
 \todo[inline]{Tutto quello appena detto non l'abbiamo già detto nei metodi? perché ripeterlo? nel caso spostarlo sopra DP}
 I risultati, riportati in Tabella \ref{tab:noexamsscore}, mostrano un drastico peggioramento delle performance predittive; ciò suggerisce che l'esecuzioni di questi esami (o di alcuni di essi) sia imprescindibile al fine di un corretto riconoscimento dei pazienti affetti dal cancro alla cervice da parte del modello. 
 Risulta altresì improbabile la corretta classificazione di un paziente a partire unicamente dai relativi dati dell'anamnesi.
-I risultati sono di particolare interesse se incrociati con quelli ottenuti nella fase di ricerca del threshold per il filtro basato sulla correlazione. In quello studio, il valore soglia proposto risultava molto basso, portando all'utilizzo di sole 5 feature che erano però in grado di garantire performance ottimali dei modelli. Tra di esse risulta presente l'attributo \textit{Schiller}, che viene invece rimosso nel test appena proposto, in cui le performance risultano pesantemente degradate. Possiamo quindi supporre che questo attributo porti con se una grande quantità di informazione; per questo motivo, nel caso in cui non fosse possibile eseguire tutti gli esami clinici proposti per motivi economici o tecnici, l'esecuzione del test di Schiller garantirebbe un sostanziale incremento delle performance del modello, portando così a predizioni più accurate.
+I risultati sono di particolare interesse se incrociati con quelli ottenuti nella fase di ricerca del threshold per il filtro basato sulla correlazione. In quello studio, il valore soglia proposto risultava molto basso, portando all'utilizzo di sole 5 feature che erano però in grado di garantire performance ottimali dei modelli. Tra di esse risulta presente la feature \textit{Schiller}, che viene invece rimosso nel test appena proposto, in cui le performance risultano pesantemente degradate. Possiamo quindi supporre che questa analisi porti con se una grande quantità di informazione; per questo motivo, nel caso in cui non fosse possibile eseguire tutti gli esami clinici proposti per motivi economici o tecnici, l'esecuzione del test di Schiller garantirebbe un sostanziale incremento delle performance del modello, portando così a predizioni più accurate.
 Nonostante ciò, per quanto concerne i costi bisogna considerare che il test di Schiller avviene durante l'esecuzione della colposcopia, il cui esito è un'altra delle feature considerate.
 \begin{table}
 	\centering
@@ -83,7 +82,7 @@ Nonostante ciò, per quanto concerne i costi bisogna considerare che il test di 
 	\label{tab:noexamsscore}
 	\begin{tabular}{|c|c|}
 		\toprule
-		Modello & f1 media \\ 
+		Modello & f1-\textit{measure} media \\ 
 		\midrule 
 		Decision Tree & $0.201$ \\
 		Random Forest & $0.165$ \\ 

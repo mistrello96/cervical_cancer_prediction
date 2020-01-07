@@ -2045,7 +2045,7 @@
 \def\fps@table{tbp}
 \def\ftype@table{2}
 \def\ext@table{lot}
-\def\fnum@table{TABLE~\thetable}
+\def\fnum@table{Tabella~\thetable}
 % V1.6 IEEE uses 8pt text for tables
 % to default to footnotesize, we hack into LaTeX2e's \@floatboxreset and pray
 \def\table{\def\@floatboxreset{\reset@font\footnotesize\@setminipage}\@float{table}}

@@ -39,32 +39,37 @@ Performance Time Report
 
 \begin{document}
 
+
+\twocolumn[
+\begin{@twocolumnfalse} 
 \maketitle
 \thispagestyle{empty}
 \pagestyle{empty}
-
+\rule{\textwidth}{.5pt}
 \begin{abstract}
 
-Il cancro alla cervice uterina è una delle forme di tumore più diffuse tra le donne e con un tasso di mortalità maggiore del $50\%$.
-Nonostante sia possibile riconoscerlo durante le fasi iniziale del suo sviluppo grazie a un continuo monitoraggio, in aree del mondo poco sviluppate ciò non è possibile incrementando il tasso di mortalità.
-In questo lavoro, si cerca di sviluppare un modello che ha lo scopo di aiutare i medici nel processo di diagnosi di tale patologia. 
-In particolare, un modello in grado di predire se un soggetto, in funzione di un insieme di attributi, sarà affetto dalla patologia oppure no.
-Il dataset utilizzato contiene le informazioni di $858$ pazienti i cui dati sono stati raccolti in un ospedale di Caracas \cite{ML}.
-Studi esplorativi del dataset evidenziano che si tratta di un problema binario (\textit{i.e.}, il paziente soffre o no della patologia) estremamente sbilanciato (10 - 90) in favore della classe rappresentante l'assenza del tumore.
-Dopo aver effettuato delle operazioni di \textit{preprocessing}, si è deciso di addestrare due modelli per tre possibili input differenti.
-I modelli indagati sono stati i DT (Decision Tree) e le RF (Random Forest), la scelta di questi modelli è dovuta alla loro caratteristica di essere \textit{explainable} che ne favorisce l'utilizzo in ambito medico.
-Mentre, i tre possibili input utilizzati sono il dataset senza nessun operazione di feature reduction, il dataset dopo l'operazione di feature selection basata su correlazione e infine delle feature estratte mediante il processo della PCA (Principal Component Analysis).
-Poiché sia la PCA che la feature selection sfruttano un iperparametro (\textit{e.g.}, il numero di componenti prodotti dalla PCA), sono stati effettuati degli studi preliminari qualitativi su questi iperparametri in modo da selezionare dei relativi valori ottimali.
-Per ogni possibile input i modelli sono stati valutati secondo un procedimento di 5-fold \textit{stratified cross-validation} e la metrica utilizzata è la f1-\textit{score}\todo{dovremo uniformare anche a f1-measure o f1-score} rispetto alla classe minoritaria (\textit{i.e.}, biopsia positiva).
-Per favorire l'apprendimento del modello, i train set ad ogni iterazione del processo, sono stati arricchiti mediante la tecnica di \textit{oversampling} SMOTE (Synthetic Minority Over-sampling TEchnique).
-Successivamente, il confronto è stato effettuato sfruttando dei t-test \textit{paired} prima tra i due modelli appartenenti alla stessa strategia di input e poi tra i migliori di ogni strategia.
-I risultati evidenziano che non vi sono differenze statstiche tra i modelli addestrati sfruttando l'intero dataset o con le feature prodotte dal processo di PCA, invece le RF risultano statisticamente migliori del DT nel caso dell'operazione di feature selection.
-I confronti tra le RF ottenute dai vari metodi evidenziano che non è possibile stabilire differenze statisticamente significative tra esse.
-Infine, si è provato ad addestrare un modello di RF sfruttando il dataset con rimosse le feature riguardanti gli esiti dei test clinici.
-I risultati evidenziano che con l'assenza di questa conoscenza risulta molto difficile discriminare la classe positiva da quella negativa, ribadendo l'importanza di tali test.
-\todo[inline]{Dovremmo specificare da qualche parte la versione di knime per la riproduzione? e dire che gli snippet python sono solo per la rappresentazione? Magari metterla come frase appena diciamo che operazioni di preprocessing facciamo. DP Si, buona idea, lo aggiungi tu? MM}
+Il cancro alla cervice uterina è una delle forme di tumore più diffuse tra le donne, con un tasso di mortalità superiore al $50\%$.
+Nonostante sia possibile individuarlo durante le fasi iniziali del suo sviluppo grazie a un continuo monitoraggio, in aree del mondo meno sviluppate ciò non è, portando così ad un incrementando il tasso di mortalità.
+%In questo lavoro si cerca di sviluppare un modello che ha lo scopo di aiutare i medici nel processo di diagnosi di tale patologia. 
+L'obiettivo principale di questo lavoro è quello di produrre un modello di \textit{machine learning} in grado di predire se un soggetto, in funzione di un insieme di caratteristiche, sia affetto dalla patologia oppure no.
+Il dataset utilizzato contiene le informazioni di $858$ pazienti, i cui dati sono stati raccolti in un ospedale di Caracas \cite{ML}.
+Studi esplorativi del dataset evidenziano come il problema sia estremamente sbilanciato (10 - 90) in favore della classe rappresentante l'assenza del tumore.
+%Studi esplorativi del dataset evidenziano come il problema trattato sia binario (\textit{i.e.}, il paziente soffre o no della patologia) ed estremamente sbilanciato (10 - 90) in favore della classe rappresentante l'assenza del tumore.
+Dopo aver effettuato delle operazioni di \textit{preprocessing} sui dati, si è deciso di addestrare due differenti modelli per ognuno dei tre possibili input differenti (decision tree e random forest).
+%I modelli indagati sono stati i DT (decision tree) e le RF (random forest), in quanto risultano essere entrambi modelli \textit{explainable}; questa caratteristica risulta essere molto apprezzata in ambito medico, in quanto si è in grado di motivare le risposte fornite dal modello di apprendimento automatico.
+I tre possibili input utilizzati per ogni modello sono il dataset senza nessun operazione di feature reduction, il dataset dopo l'operazione di feature selection basata su correlazione e infine le feature estratte mediante il processo della PCA (Principal Component Analysis).
+%Poiché sia la PCA che la feature selection sfruttano un iperparametro (\textit{e.g.}, il numero di componenti prodotti dalla PCA), sono stati effettuati degli studi preliminari su questi iperparametri in modo da selezionare dei relativi valori ottimali.
+Per ogni possibile input i modelli sono stati valutati secondo un procedimento di 5-fold \textit{stratified cross-validation}, utilizzando come metrica utilizzata la f1-\textit{measure} rispetto alla classe minoritaria (\textit{i.e.}, biopsia positiva).
+%Per favorire l'apprendimento del modello, i train set, ad ogni iterazione del processo, sono stati arricchiti mediante la tecnica di \textit{oversampling} SMOTE (Synthetic Minority Over-sampling TEchnique).
+Il confronto trai vari modelli è stato effettuato sfruttando dei \textit{paired} t-test, prima tra i due modelli appartenenti il medesimo input e poi tra i migliori di ogni strategia.
+I risultati evidenziano l'assenza di differenze statistiche tra i modelli addestrati sfruttando l'intero dataset o con le feature prodotte dal processo di PCA, mentre le RF risultano statisticamente migliori del DT nel caso dell'operazione di feature selection mediante correlazione; i confronti tra i modelli con input differenti non ha portato all'evidenza differenze statisticamente rilevanti.
+%I confronti tra le RF ottenute dai vari metodi evidenziano che non è possibile stabilire differenze statisticamente significative tra esse.
+Infine gli algoritmi di apprendimento automatico utilizzati in precedenza sono stati addestrati sfruttando il dataset a cui sono state rimosse le feature riguardanti gli esiti dei test clinici.
+I risultati evidenziano che l'assenza di questa informazione pregiudica fortemente la discriminazione della classe positiva da quella negativa, ribadendo l'importanza di tali esami.
 \end{abstract}
-
+\rule{\textwidth}{.5pt}
+\end{@twocolumnfalse}
+]
 
 \input{introduction}
 
