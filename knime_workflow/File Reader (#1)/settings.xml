@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="DataURL" type="xstring" value="knime://LOCAL/kag_risk_factors_cervical_cancer.csv"/>
+<entry key="DataURL" type="xstring" value="knime://LOCAL/risk_factors_cervical_cancer.csv"/>
 <config key="Delimiters">
 <config key="Delim0">
 <entry key="pattern" type="xstring" value="%%00010"/>
@@ -495,7 +495,7 @@
 </config>
 </config>
 <config key="35">
-<entry key="UserSetValues" type="xboolean" value="true"/>
+<entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
@@ -549,6 +549,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="f8ac03c5-7662-4e59-8388-17225e3e3b87"/>
+<entry key="file_store_id" type="xstring" value="5f19932b-205d-4f98-8eab-8ebcae777457"/>
 </config>
 </config>

@@ -15,3 +15,8 @@ Concludendo, è possibile affermare che gli obiettivi posti all'inizio di questo
 Al fine si superare questo problema, in futuro sarebbe necessario raccogliere dati su una popolazione sensibilmente più ampia, in modo da non essere più limitati dalla scarsa rappresentazione di record che presentano la patologia e rendendo altresì più significative le analisi effettuate e più robusti i modelli proposti.
 Lo sviluppo di una pipeline per l'imputazione dei \textit{missing value} che tenga in considerazione i legami e le relazioni tra le varie feature potrebbe garantire un ulteriore margine di miglioramento, assicurando la consistenza di alcuni vincoli logici che andrebbero altrimenti persi con le classiche tecniche di imputazione.
 Un ulteriore punto di sviluppo di questo lavoro potrebbe scaturire dal confronto con esperti del dominio medico, grazie ai quali si potrebbe ottenere una stima più accurata del peso/costo dei diversi tipi di predizioni errate dei modelli, ottimizzandoli così secondo i nuovi criteri proposti.
+
+\section*{NOTE TECNICHE}
+Si segnala per questioni di compatibilità che la versione di Knime utilizzata per l'esecuzione del workflow relativo al lavoro svolto è la 4.1.0, con integrazione Python per l'esecuzione di snippet grafici e Weka per la creazione di alcuni modelli di predizione.
+Al fine del corretto funzionamento del workflow, è necessario inserire il dataset ottenuto da \cite{ML} nella radice del workspace del progetto e creare una cartella denominata images, nella quale verranno salvati i grafici prodotti dal workflow.
+La repository del progetto è disponibile all'indirizzo\\\url{https://gitlab.com/mistrello96/cervical_cancer_prediction}
